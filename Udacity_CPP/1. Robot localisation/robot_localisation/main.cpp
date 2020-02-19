@@ -6,9 +6,9 @@
 //  Copyright © 2020 Artem Makarov. All rights reserved.
 //
 
-#include "main.hpp"
 #include "sense.h"
 #include "move.h"
+
 #include <iostream>
 #include <string>
 #include <vector>

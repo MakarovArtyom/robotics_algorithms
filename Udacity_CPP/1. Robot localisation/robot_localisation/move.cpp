@@ -6,18 +6,19 @@
 //  Copyright © 2020 Artem Makarov. All rights reserved.
 //
 
-#include "move.hpp"
+
 #include <vector>
-using namespace std;
+#include "move.h"
 
 
-vector<double> move(vector<double> p, int U, double pExact,
+
+std::vector<double> move(std::vector<double> p, int U, double pExact,
                     double pOvershoot, double pUndershoot) {
     /*
      * Updates probability based on movement.
      */
     
-    vector<double> q (p.size());
+    std::vector<double> q (p.size());
     double s = 0; // holds probability values calculated below
     
     // Calculate new probabilities

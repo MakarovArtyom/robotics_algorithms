@@ -6,19 +6,19 @@
 //  Copyright © 2020 Artem Makarov. All rights reserved.
 //
 
-#include "sense.hpp"
+
+#include "sense.h"
+
 #include <iostream>
 #include <vector>
 
-using namespace std;
-
-vector<double> sense(vector<double> p, string Z, vector<string> world,
+std::vector<double> sense(std::vector<double> p, std::string Z, std::vector<std::string> world,
                      double pHit, double pMiss) {
     /*
      * Updates probability based on a sensor reading.
      */
     
-    vector<double> q (p.size());
+    std::vector<double> q (p.size());
     bool hit;
     double s = 0; // sum of the q vector's elements
     

@@ -26,13 +26,10 @@
 
 /* Begin PBXFileReference section */
 		3E7B29F723FC15AB0081A1C1 /* sense.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sense.cpp; sourceTree = "<group>"; };
-		3E7B29F823FC15AB0081A1C1 /* sense.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = sense.hpp; sourceTree = "<group>"; };
 		3E7B29FA23FC15B90081A1C1 /* sense.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sense.h; sourceTree = "<group>"; };
 		3E7B29FB23FC169A0081A1C1 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		3E7B29FC23FC169A0081A1C1 /* main.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = main.hpp; sourceTree = "<group>"; };
 		3E7B29FE23FC16FA0081A1C1 /* move.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = move.h; sourceTree = "<group>"; };
 		3E7B29FF23FC1DD70081A1C1 /* move.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = move.cpp; sourceTree = "<group>"; };
-		3E7B2A0023FC1DD70081A1C1 /* move.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = move.hpp; sourceTree = "<group>"; };
 		3E8839CD23EAE5AF00C052E3 /* robot_localisation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = robot_localisation; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -67,12 +64,9 @@
 			isa = PBXGroup;
 			children = (
 				3E7B29F723FC15AB0081A1C1 /* sense.cpp */,
-				3E7B29FB23FC169A0081A1C1 /* main.cpp */,
-				3E7B29FC23FC169A0081A1C1 /* main.hpp */,
-				3E7B29F823FC15AB0081A1C1 /* sense.hpp */,
 				3E7B29FA23FC15B90081A1C1 /* sense.h */,
+				3E7B29FB23FC169A0081A1C1 /* main.cpp */,
 				3E7B29FF23FC1DD70081A1C1 /* move.cpp */,
-				3E7B2A0023FC1DD70081A1C1 /* move.hpp */,
 				3E7B29FE23FC16FA0081A1C1 /* move.h */,
 			);
 			path = robot_localisation;
@@ -258,6 +252,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LD_NO_PIE = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -266,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				LD_NO_PIE = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

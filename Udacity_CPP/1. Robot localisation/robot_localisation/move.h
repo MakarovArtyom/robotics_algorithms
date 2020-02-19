@@ -9,7 +9,9 @@
 #ifndef move_h
 #define move_h
 
-vector<double> move(vector<double> p, int U, double pExact,
-                    double pOvershoot, double pUndershoot);
+#include <vector>
+
+std::vector<double> move(std::vector<double> p, int U, double pExact, double pOvershoot, double pUndershoot);
 
 #endif /* move_h */
+
